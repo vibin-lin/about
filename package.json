@@ -1,41 +1,22 @@
 {
   "name": "about",
-  "version": "1.0.0",
-  "private": true,
-  "description": "博客中关于我的页面",
+  "version": "0.0.1",
+  "description": "关于我页面",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build:prod && node ./test/test.js",
-    "webpack": "webpack",
-    "dev": "webpack serve --config webpack.development.js",
-    "start": "npm run dev",
-    "build:dev": "webpack --config webpack.development.js",
-    "build:prod": "webpack --config webpack.production.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch & live-server --port=8085"
   },
-  "author": "arthurLin",
-  "license": "BSD-2-Clause",
+  "author": "arthur.lin",
+  "license": "MIT",
   "dependencies": {
-    "three": "^0.126.0"
-  },
-  "devDependencies": {
-    "clean-webpack-plugin": "3.0.0",
-    "compression-webpack-plugin": "7.1.2",
-    "css-loader": "^5.1.1",
-    "html-webpack-plugin": "5.2.0",
-    "less": "^4.1.1",
-    "less-loader": "^8.0.0",
-    "node-static": "0.7.11",
-    "pixelmatch": "5.2.1",
-    "pngjs": "6.0.0",
-    "puppeteer": "8.0.0",
-    "source-map-loader": "2.0.1",
-    "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "5.1.1",
-    "ts-loader": "8.0.17",
-    "typescript": "4.2.2",
-    "webpack": "5.24.2",
-    "webpack-cli": "4.5.0",
-    "webpack-dev-server": "3.11.2",
-    "webpack-merge": "5.7.3"
+    "live-server": "^1.2.1",
+    "phaser": "^3.55.2",
+    "three": "^0.129.0",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
   }
 }
